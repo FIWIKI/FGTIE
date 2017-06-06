@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{tikz}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[hidelinks]{hyperref}
+\usepackage{palatino}
+% \pagestyle{headings}
+\bibliographystyle{plain}
+
+\addto\captionsspanish{\renewcommand{\chaptername}{Bloque}}
+
+\title{Fundamentos de Gestión de Tecnologías de la Información}
+
+\author{Luis Eduardo Bueso}
+
+\date{\today}
+\makeindex
+
+\begin{document}
+\begin{titlepage}
+	\hfill \today
+
+	\vspace{.2\textheight}
+
+	\begin{center}
+		{\huge\bfseries Fundamentos de Gestión de Tecnologías de la Información\par}
+		\vspace{3cm}
+                Luis Eduardo Bueso \par
+	\end{center}
+
+\end{titlepage}\tableofcontents
+
+\chapter{Concepto de empresa. Elementos de una organización}
+\label{chap:organizacion}
+\input{sec/organizacion}
+
+\chapter{Recursos de información en la empresa}
+\label{chap:recursos}
+\input{sec/recursos}
+
+\chapter{Gestión de Servicios de TI}
+\label{chap:servicios}
+\input{sec/servicios}
+
+\end{document}
